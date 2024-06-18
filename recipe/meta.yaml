@@ -32,7 +32,7 @@ requirements:
     - langchain-core
     - aws-embedded-metrics
     - jupyterlab >=4.0,<5
-    - sagemaker-jupyterlab-extension-common >= 0.1.18,<1
+    - sagemaker-jupyterlab-extension-common >=0.1.18,<1
 
 test:
   imports:
