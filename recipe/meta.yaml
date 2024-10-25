@@ -1,5 +1,5 @@
 {% set name = "amazon-sagemaker-jupyter-ai-q-developer" %}
-{% set version = "1.0.12" %}
+{% set version = "1.0.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amazon_sagemaker_jupyter_ai_q_developer-{{ version }}.tar.gz
-  sha256: da903a46a3e1d050997c7b27ccbe9f2750602a14078addf983c369ffc2312045
+  sha256: 09ecf2dec82108302cfece7d1d289655d81cd1d08dd6bfda7feb758e0f088d3e
 
 build:
   noarch: python
