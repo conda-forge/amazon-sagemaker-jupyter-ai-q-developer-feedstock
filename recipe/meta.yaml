@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amazon_sagemaker_jupyter_ai_q_developer-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/amazon_sagemaker_jupyter_ai_q_developer-{{ version }}.tar.gz
   sha256: dfc1f2b50d4f37a9370f1d2c29de93a562d2947fb4962104e4a31b266a6f19b9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling >=1.5.0
     - jupyterlab >=4.0.0,<4.2
     - hatch-nodejs-version >=0.3.2
     - hatch-jupyter-builder
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - jupyter_server >=2.0.1,<3
     - jupyter-ai >=2.17.0,<3
     - jupyter-ai-magics >=2.17.0,<3
@@ -42,6 +42,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://aws.amazon.com/sagemaker/
