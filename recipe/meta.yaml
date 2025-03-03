@@ -23,7 +23,7 @@ requirements:
     - hatch-jupyter-builder
     - pip
   run:
-    - python >={{ python_min }}
+    - python {{ python_min }}
     - jupyter_server >=2.0.1,<3
     - jupyter-ai >=2.17.0,<3
     - jupyter-ai-magics >=2.17.0,<3
@@ -40,15 +40,12 @@ requirements:
 test:
   requires:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   imports:
     - amazon_sagemaker_jupyter_ai_q_developer
   commands:
     - pip install faiss-cpu
     - pip check
-  requires:
-    - pip
-    - python {{ python_min }}
 
 about:
   home: https://aws.amazon.com/sagemaker/
