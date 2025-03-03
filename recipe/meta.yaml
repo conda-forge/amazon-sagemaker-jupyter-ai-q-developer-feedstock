@@ -33,20 +33,18 @@ requirements:
     - aws-embedded-metrics
     - jupyterlab >=4.0,<5
     - sagemaker-jupyterlab-extension-common >=0.1.18,<1
-    - faiss-cpu >=1.8.0,<2.0.0,!=1.8.0.post0
+    - faiss-cpu >=1.8.0,<2
     - ipython >=8.18.1,<8.32.0
 
 
 test:
   requires:
     - pip
-    - faiss-cpu >=1.8.0,<2.0.0,!=1.8.0.post0
+    - python >=3.8
   imports:
     - amazon_sagemaker_jupyter_ai_q_developer
   commands:
     - pip check
-  requires:
-    - pip
 
 about:
   home: https://aws.amazon.com/sagemaker/
