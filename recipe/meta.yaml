@@ -35,8 +35,6 @@ requirements:
     - sagemaker-jupyterlab-extension-common >=0.1.18,<1
     - faiss-cpu >=1.8.0,<2.0.0,!=1.8.0.post0
     - ipython >=8.18.1,<8.32.0
-  test:
-    - faiss-cpu >=1.8.0,<2.0.0,!=1.8.0.post0
 
 
 test:
