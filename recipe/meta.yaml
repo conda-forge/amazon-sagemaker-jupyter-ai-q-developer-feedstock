@@ -40,6 +40,9 @@ requirements:
 
 
 test:
+  requires:
+    - pip
+    - faiss-cpu >=1.8.0,<2.0.0,!=1.8.0.post0
   imports:
     - amazon_sagemaker_jupyter_ai_q_developer
   commands:
