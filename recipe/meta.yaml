@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -34,7 +34,7 @@ requirements:
     - jupyterlab >=4.0,<5
     - sagemaker-jupyterlab-extension-common >=0.1.18,<1
     - faiss-cpu >=1.8.0,<2
-    - ipython >=8.18.1,<8.32.0
+    - ipython >=8.18.1,!8.32.0,<9
 
 
 test:
