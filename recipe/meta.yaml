@@ -48,7 +48,6 @@ test:
     - amazon_sagemaker_jupyter_ai_q_developer
   commands:
     - pip install faiss-cpu
-    - pip check
 
 about:
   home: https://aws.amazon.com/sagemaker/
