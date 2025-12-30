@@ -147,6 +147,8 @@ Feedstock Maintainers
 * [@aws-jasakshi](https://github.com/aws-jasakshi/)
 * [@bhadrip](https://github.com/bhadrip/)
 * [@chaonengquan](https://github.com/chaonengquan/)
+* [@earaghbidikashani](https://github.com/earaghbidikashani/)
 * [@gogakoreli](https://github.com/gogakoreli/)
+* [@joshuatowner](https://github.com/joshuatowner/)
 * [@kumarnzt](https://github.com/kumarnzt/)
 
